@@ -14,12 +14,12 @@ a break down of IPs. For example you can use it to troubleshoot network issues i
 you notice large number of connections sitting in SYN-RECV state. You could run 
 something like this
 
-$ ss -ant | grep SYN-RECV | awk '{ print $5 }' | cut -f1 -d:  | perl asn_ip_analysis.pl 
-Top  ASes
-
- \#          ASN
-    1170 http://bgp.he.net/AS7657	 NZ = VODAFONE-NZ-NGN-AS Vodafone NZ Ltd.
-       2 http://bgp.he.net/AS4771	 NZ = NZTELECOM Telecom New Zealand Ltd.\
+> $ ss -ant | grep SYN-RECV | awk '{ print $5 }' | cut -f1 -d:  | perl asn_ip_analysis.pl 
+> Top  ASes
+> 
+>  \#          ASN
+>    1170 http://bgp.he.net/AS7657	 NZ = VODAFONE-NZ-NGN-AS Vodafone NZ Ltd.
+>       2 http://bgp.he.net/AS4771	 NZ = NZTELECOM Telecom New Zealand Ltd.\
 
 Makes it pretty clear that something is happening with SYN-ACKs going to Vodafone.
 
