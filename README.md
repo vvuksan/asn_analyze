@@ -7,7 +7,7 @@ often way more informative than looking at individual IP prefixes. Especially
 since some large providers can have thousands of different IP prefixes. Included are 
 two scripts
 
-1. asn_ip_analysis.pl
+# asn_ip_analysis.pl
 
 This script expects just a list of IPs separated by a new line. It will give you
 a break down of IPs. For example you can use it to troubleshoot network issues ie.
@@ -43,7 +43,7 @@ e.g.
     .......
 
 
-2. varnish_asn_breakdown.pl
+# varnish_asn_breakdown.pl
 
 This script is used to sample traffic going through varnish. This is intended for situations
 where your machines are multi-homed and you want to make sure links are used properly
