@@ -49,10 +49,10 @@ This script is used to sample traffic going through varnish. This is intended fo
 where your machines are multi-homed and you want to make sure links are used properly
 overused. It is similar to asn_ip_analysis however it does couple additional things
 
-a) Uses payload information - bytes sent and sorts ASNs to which you send most traffic to
-b) Shows a sample IP so you could look up routing policy if you desire
-c) Shows which hop/router traffic is gonna go out of
-d) It requires no arguments. It uses varnishncsa to get data
+* Uses payload information - bytes sent and sorts ASNs to which you send most traffic to
+* Shows a sample IP so you could look up routing policy if you desire
+* Shows which hop/router traffic is gonna go out of
+* It requires no arguments. It uses varnishncsa to get data
 
 
 
