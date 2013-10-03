@@ -17,7 +17,7 @@ something like this
     $ ss -ant | grep SYN-RECV | awk '{ print $5 }' | cut -f1 -d:  | perl asn_ip_analysis.pl 
     Top  ASes
     
-    \#          ASN
+    #          ASN
        1170 http://bgp.he.net/AS7657	 NZ = VODAFONE-NZ-NGN-AS Vodafone NZ Ltd.
           2 http://bgp.he.net/AS4771	 NZ = NZTELECOM Telecom New Zealand Ltd.\
 
@@ -26,11 +26,11 @@ Makes it pretty clear that something is happening with SYN-ACKs going to Vodafon
 You could also analyze your web logs to see where most of your customers are coming from
 e.g.
 
-# cut -f1 -d" " access.log | perl /opt/asn/asn_ip_analysis.pl 
-............................
-You supplied 28646 IPs. Showing top 40 ASNs
+    # cut -f1 -d" " access.log | perl /opt/asn/asn_ip_analysis.pl 
+    ............................
+    You supplied 28646 IPs. Showing top 40 ASNs
 
- \# IPs            ASN
+    # IPs            ASN
       331569    http://bgp.he.net/AS7922   US = COMCAST-7922 - Comcast Cable Communications
       290686     http://bgp.he.net/AS786   GB = JANET The JNT Association
       215274   http://bgp.he.net/AS15169   US = GOOGLE - Google Inc.
@@ -40,7 +40,7 @@ You supplied 28646 IPs. Showing top 40 ASNs
        98017     http://bgp.he.net/AS701   US = UUNET - MCI Communications Services
        87109    http://bgp.he.net/AS5089   GB = NTL Virgin Media Limited
        75678    http://bgp.he.net/AS3352   ES = TELEFONICA-DATA-ESPANA TELEFONICA DE ESPANA
-.......
+    .......
 
 
 2. varnish_asn_breakdown.pl
