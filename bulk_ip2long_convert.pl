@@ -17,9 +17,9 @@ while(<ASN_LIST>)
   chop;
   my ($as, $ip_prefix) = split /,/;
   
-  $as =~ m/\[AS(\d+)(.*)/;
+  $as =~ m/AS(\d+)(.*)/;
   $substr = $1;
-  print "$substr," . ip2long($ip_prefix) ."\n";  
+  print ip2long($ip_prefix) ." ${substr}\n";  
   
 }
 
